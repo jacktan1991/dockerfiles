@@ -9,7 +9,7 @@ FROM		ubuntu
 MAINTAINER	SvenDowideit@home.org.au
 
 
-VOLUME		["/var/cache/apt-cacher-ng"]
+VOLUME		["/var/cache/apt-cacher-ng", "/var/log/apt-cacher-ng/"]
 RUN		apt-get update ; apt-get install -yq apt-cacher-ng
 
 EXPOSE 		3142
